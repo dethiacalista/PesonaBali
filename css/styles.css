@@ -1,0 +1,80 @@
+:root {
+    --bg-color: #86A7FC;
+    --second-bg-color: #FFDD95;
+    --main-text-color: #ffffff;
+    --second-text-color: #000000;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color); /* Menggunakan variabel untuk warna latar belakang */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--second-bg-color); /* Menggunakan variabel untuk warna latar belakang */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--second-text-color); /* Menggunakan variabel untuk warna teks utama */
+    margin-bottom: 20px;
+  }
+  
+  .data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .data-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--second-bg-color); /* Menggunakan variabel untuk warna latar belakang */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .data-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .data-item h2 {
+    margin: 0 0 10px;
+    color: var(--bg-color); /* Menggunakan variabel untuk warna teks */
+  }
+  
+  .data-item p {
+    margin: 0;
+    color: var(--second-text-color); /* Menggunakan variabel untuk warna teks sekunder */
+  }
+  
+  /* Styling untuk Tabel */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Menambahkan margin di bawah tabel */
+  }
+  
+  .data-table th, .data-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center; /* Menyelaraskan konten tabel ke kiri */
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Membuat teks header tebal */
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Menambahkan warna latar belakang halus pada baris genap */
+  }
+  
